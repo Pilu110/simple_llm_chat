@@ -23,7 +23,7 @@ PAYLOAD = {
 
 def main():
     print('Kérdés:')
-    print('=' * 100)
+    print('-' * 100)
     print(QUESTION)
     print('=' * 100)
 
@@ -36,7 +36,7 @@ def main():
     response_json = response.json()
 
     print('Érvelés:')
-    print('=' * 100)
+    print('-' * 100)
     print(response_json['choices'][0]['message']['reasoning'])
     print('=' * 100)
 
@@ -44,4 +44,5 @@ def main():
     print(response_json['choices'][0]['message']['content'])
 
 if __name__ == '__main__':
+
     main()
